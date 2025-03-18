@@ -1,8 +1,12 @@
 let primKey = 1
-let potteryObject = {}
+//let potteryObject = {}
 
 export const makePottery = (shape, weight, height) => {
-    potteryObject[primKey] = {shape: shape, weight: weight, height: height, id: primKey}
+    
+    let potteryObject = {shape: shape, weight: weight, height: height, id: primKey}
+    //potteryObject[primKey] = {shape: shape, weight: weight, height: height, id: primKey}
     primKey ++
     return potteryObject
 }
+
+//module.exports = {potteryObject}
