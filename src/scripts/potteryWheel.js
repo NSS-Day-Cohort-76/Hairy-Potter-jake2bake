@@ -4,7 +4,7 @@ let primKey = 1
 export const makePottery = (shape, weight, height) => {
     
     let potteryObject = {shape: shape, weight: weight, height: height, id: primKey}
-    //potteryObject[primKey] = {shape: shape, weight: weight, height: height, id: primKey}
+    
     primKey ++
     return potteryObject
 }

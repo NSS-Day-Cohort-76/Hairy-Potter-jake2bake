@@ -121,11 +121,16 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
    > Your answer here
+   > I defined a function taking a parameter that received the value of the array produced in the PotteryCatalog, defined a variable and set it to an empty string in the function, iterated over the array passed in as an argument to the parameter, and for each object in the array I applied the string HTML template that would grab the specified values. Then, on main.js I called the function with the array argument and stored the function's return value in a variable, defined a new variable grabbing the value of the element id from the index.html module, and then used the .innerhtml method to set the values returned from the function inside the specified location in the html for the browser to read and display. 
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
    > Paste your video's public URL here
+   > https://www.loom.com/share/5fa452761e22422881bcb878e579da6e
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
    > Your answer here
+   > It builds the objects and provides the data the other functions use and the other modules are dependent on the potteryWheel module. 
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
    > Your answer here
+   > The if statements in the PotteryCatalog module's toSellOrNotToSell function would need to either be amended in the conditionals or additional if/else if statements with the commands in the code blocks could work and then push that augmented object into the array before it's cloned in the usePottery function. 
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
    > Paste your video's public URL here
+   > https://www.loom.com/share/2f4857e15373466dacfc0acb5d9b9070
